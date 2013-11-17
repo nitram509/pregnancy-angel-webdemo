@@ -134,10 +134,10 @@
 
     <div data-role="navbar" class="nav-glyphish-example" data-grid="d">
       <ul>
-        <li><a data-icon="custom" href="#" id="diary">Tagebuch</a></li>
+        <li><a data-icon="custom" href="#page-diary" id="diary">Tagebuch</a></li>
         <li><a data-icon="custom" href="#page-wishes" id="wishes">Wünsche</a></li>
         <li><a data-icon="custom" href="#page-products" id="products">Produkte</a></li>
-        <li><a data-icon="custom" href="#" id="aroundMe">Around Me</a></li>
+        <li><a data-icon="custom" href="#page-aroundMe" id="aroundMe">Around Me</a></li>
         <!--<li><a data-icon="custom" href="#" id="overview">Übersicht</a></li>-->
         <li><a data-icon="custom" href="#" id="education">Informationen</a></li>
       </ul>
@@ -193,10 +193,10 @@
   <div data-role="footer" data-id="foo1" data-position="fixed">
     <div data-role="navbar" data-grid="d">
       <ul>
-        <li><a data-icon="custom" href="#" id="diary">Tagebuch</a></li>
+        <li><a data-icon="custom" href="#page-diary" id="diary">Tagebuch</a></li>
         <li><a data-icon="custom" href="#page-wishes" id="wishes" class="ui-btn-active ui-state-persist">Wünsche</a></li>
         <li><a data-icon="custom" href="#page-products" id="products">Produkte</a></li>
-        <li><a data-icon="custom" href="#" id="aroundMe">Around Me</a></li>
+        <li><a data-icon="custom" href="#page-aroundMe" id="aroundMe">Around Me</a></li>
         <!--<li><a data-icon="custom" href="#" id="overview">Übersicht</a></li>-->
         <li><a data-icon="custom" href="#" id="education">Informationen</a></li>
       </ul>
@@ -261,16 +261,94 @@
   <div data-role="footer" data-id="foo1" data-position="fixed">
     <div data-role="navbar" data-grid="d">
       <ul>
-        <li><a data-icon="custom" href="#" id="diary">Tagebuch</a></li>
+        <li><a data-icon="custom" href="#page-diary" id="diary">Tagebuch</a></li>
         <li><a data-icon="custom" href="#page-wishes" id="wishes">Wünsche</a></li>
         <li><a data-icon="custom" href="#page-products" id="products" class="ui-btn-active ui-state-persist">Produkte</a></li>
-        <li><a data-icon="custom" href="#" id="aroundMe">Around Me</a></li>
+        <li><a data-icon="custom" href="#page-aroundMe" id="aroundMe">Around Me</a></li>
         <!--<li><a data-icon="custom" href="#" id="overview">Übersicht</a></li>-->
         <li><a data-icon="custom" href="#" id="education">Informationen</a></li>
       </ul>
     </div>
   </div>
 </div>
+
+<!-- *** Tagebuch *********************************** -->
+
+<div data-role="page" id="page-diary">
+
+  <div data-role="header" style="overflow:hidden;">
+    <h1> <!--...--> </h1>
+    <!--<a href="#page-landing"><img src="img/angel_36px.png" width="18px" alt=""/></a>-->
+    <a href="#page-landing"><img src="img/frau.png" width="18px" alt=""/></a>
+    <a href="options-dialog.html" data-icon="gear" data-rel="dialog" data-transition="pop" data-role="button"
+       data-inline="true" class="ui-btn-right">Options</a>
+
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#">Diary</a></li>
+      </ul>
+    </div>
+    <!-- /navbar -->
+  </div>
+  <!-- /header -->
+
+  <div data-role="content">
+
+  </div>
+
+  <div data-role="footer" data-id="foo1" data-position="fixed">
+    <div data-role="navbar" data-grid="d">
+      <ul>
+        <li><a data-icon="custom" href="#page-diary" id="diary" class="ui-btn-active ui-state-persist">Tagebuch</a></li>
+        <li><a data-icon="custom" href="#page-wishes" id="wishes">Wünsche</a></li>
+        <li><a data-icon="custom" href="#page-products" id="products">Produkte</a></li>
+        <li><a data-icon="custom" href="#page-aroundMe" id="aroundMe">Around Me</a></li>
+        <!--<li><a data-icon="custom" href="#" id="overview">Übersicht</a></li>-->
+        <li><a data-icon="custom" href="#" id="education">Informationen</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<!-- *** Around Me *********************************** -->
+
+<div data-role="page" id="page-aroundMe">
+
+  <div data-role="header" style="overflow:hidden;">
+    <h1> <!--...--> </h1>
+    <!--<a href="#page-landing"><img src="img/angel_36px.png" width="18px" alt=""/></a>-->
+    <a href="#page-landing"><img src="img/frau.png" width="18px" alt=""/></a>
+    <a href="options-dialog.html" data-icon="gear" data-rel="dialog" data-transition="pop" data-role="button"
+       data-inline="true" class="ui-btn-right">Options</a>
+
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#">Around Me</a></li>
+      </ul>
+    </div>
+    <!-- /navbar -->
+  </div>
+  <!-- /header -->
+
+  <div data-role="content" style="text-align: center; padding:0">
+    <img src="img/babywalz-location.jpg" alt="babywalz-location" width="100%"/>
+  </div>
+
+  <div data-role="footer" data-id="foo1" data-position="fixed">
+    <div data-role="navbar" data-grid="d">
+      <ul>
+        <li><a data-icon="custom" href="#page-diary" id="diary">Tagebuch</a></li>
+        <li><a data-icon="custom" href="#page-wishes" id="wishes">Wünsche</a></li>
+        <li><a data-icon="custom" href="#page-products" id="products">Produkte</a></li>
+        <li><a data-icon="custom" href="#page-aroundMe" id="aroundMe" class="ui-btn-active ui-state-persist">Around Me</a></li>
+        <!--<li><a data-icon="custom" href="#" id="overview">Übersicht</a></li>-->
+        <li><a data-icon="custom" href="#" id="education">Informationen</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
 
 </body>
 </html>
