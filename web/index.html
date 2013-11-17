@@ -31,16 +31,18 @@
     <a href="options-dialog.html" data-icon="gear" data-rel="dialog" data-transition="pop" data-role="button"
        data-inline="true" class="ui-btn-right">Options</a>
 
-    <div data-role="navbar">
+    <!--<div data-role="navbar">
       <ul>
         <li><a href="#">Heute</a></li>
       </ul>
-    </div>
+    </div>-->
     <!-- /navbar -->
   </div>
   <!-- /header -->
 
   <div data-role="content">
+
+    <h2>Heute</h2>
 
     <div data-role="collapsible-set" data-inset="false">
       <div data-role="collapsible">
@@ -50,8 +52,7 @@
           <li>
             <label class="ui-checkbox"><input type="checkbox" name="checkbox-0" data-mini="false">Mutterpass</label>
             <label class="ui-checkbox"><input type="checkbox" name="checkbox-0" data-mini="false">Krankenversicherungskarte</label>
-            <label class="ui-checkbox"><input type="checkbox" name="checkbox-0"
-                                              data-mini="false">Einweisungsschein</label>
+            <label class="ui-checkbox"><input type="checkbox" name="checkbox-0" data-mini="false">Einweisungsschein</label>
             <label class="ui-checkbox"><input type="checkbox" name="checkbox-0" data-mini="false">Ihr
               Geburtsplan</label>
           </li>
@@ -75,23 +76,60 @@
           </li>
         </ul>
       </div>
-      <div data-role="collapsible">
-        <h3>Yoga</h3>
+      <div style="border-bottom: 1px solid silver">
+        <img src="img/icon-black-calendar.png" alt="cal"/>
+        <span>Yoga</span>
       </div>
+      <div style="border-bottom: 1px solid silver">
+        <img src="img/icon-black-wunsch.png" alt="cal"/>
+        <span style="font-weight: bold">Kinderwagen</span>
+      </div>
+
+
+    </div>
+
+    <!--- - - --- -    --->
+    <h2>Morgen</h2>
+
+    <div data-role="collapsible-set" data-inset="false">
       <div data-role="collapsible">
-        <h3>Kinderwagen</h3>
+        <h3>Termine</h3>
+        <ul data-role="listview" data-inset="false">
+          <li>
+            <div style="border-bottom: 1px solid silver">
+              <img src="img/icon-black-calendar.png" alt="cal"/>
+              Artzbesuch, Ultraschall
+            </div>
+            <div style="border-bottom: 1px solid silver"  >
+              <img src="img/icon-black-calendar.png" alt="cal"/>
+              Nachfragen Liefertermin bei Baby-Walz
+            </div>
+          </li>
+        </ul  >
       </div>
     </div>
+
+    <div data-role="collapsible-set" data-inset="false">
+      <div>
+
+      </div>
+      <div>
+
+      </div>
+    </div>
+
+
+
 
   </div>
 
   <div data-role="footer" data-id="foo1" data-position="fixed">
 
-    <div data-role="navbar">
+    <!--<div data-role="navbar">
       <ul>
         <li><a href="#">Morgen</a></li>
       </ul>
-    </div>
+    </div>-->
 
     <div data-role="navbar" class="nav-glyphish-example" data-grid="d">
       <ul>
