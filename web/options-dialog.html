@@ -31,10 +31,24 @@
 
   <div data-role="content">
     <!--<h1>Dein Profil</h1>-->
-    <p>
-      <img src="img/frau.png" alt="Frau">
-      <img src="img/man.png" alt="Mann">
+    <p style="text-align: center;">
+      <img src="img/frau-128.png" alt="Frau">
+      &nbsp;
+      &nbsp;
+      <img src="img/mann-128.png" alt="Mann">
     </p>
+    <div>
+      <label for="slider-flip-m">Das erste Kind?</label>
+      <select name="slider-flip-m" id="slider-flip-m" data-role="slider" data-mini="true">
+        <option value="off">No</option>
+        <option value="on" selected="">Yes</option>
+      </select>
+    </div>
+    <div>
+      <label for="date">Voraussichtlicher Geburtstermin</label>
+      <input type="date" name="date" id="date" value="2014-05-23">
+    </div>
+    <p>&nbsp;</p>
     <a href="index.html" data-role="button" data-rel="back" data-theme="b">Ok, I get it</a>
   </div>
 </div>
