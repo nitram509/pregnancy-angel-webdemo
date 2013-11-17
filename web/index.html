@@ -14,16 +14,13 @@
 
 <body>
 
-<div data-role="page">
-  <!--<div data-role="header">-->
-    <!--<div class="text-center" style="background-color: #ffffff; text-align: center">-->
-      <!--<img src="img/pregnA_Logo_400px.png" alt="logo" height="10%">-->
-    <!--</div>-->
-  <!--</div>-->
+<!-- *** START SEITE *********************************** -->
+
+<div data-role="page" id="page-landing">
 
   <div data-role="header" style="overflow:hidden;">
     <h1> <!--...--> </h1>
-    <a href="#"><img src="img/angel_36px.png" width="18px" alt=""/></a>
+    <a href="#page-landing"><img src="img/angel_36px.png" width="18px" alt=""/></a>
     <a href="#" data-icon="gear" class="ui-btn-right">Options</a>
     <div data-role="navbar">
       <ul>
@@ -88,7 +85,7 @@
     <div data-role="navbar" data-grid="d">
       <ul>
         <li><a href="#" id="diary">Tagebuch</a></li>
-        <li><a href="#" id="wishes">Wünsche</a></li>
+        <li><a href="#page-wishes" id="wishes">Wünsche</a></li>
         <li><a href="#" id="products">Produkte</a></li>
         <li><a href="#" id="aroundMe">Around Me</a></li>
         <li><a href="#" id="overview">Übersicht</a></li>
@@ -97,6 +94,52 @@
     </div>
   </div>
 </div>
+
+<!-- *** WishList *********************************** -->
+
+<div data-role="page" id="page-wishes">
+
+  <div data-role="header" style="overflow:hidden;">
+    <h1> <!--...--> </h1>
+    <a href="#page-landing"><img src="img/angel_36px.png" width="18px" alt=""/></a>
+    <a href="#" data-icon="gear" class="ui-btn-right">Options</a>
+  </div><!-- /header -->
+
+  <div data-role="content">
+
+    <div data-role="collapsible-set" data-inset="false">
+      <div data-role="collapsible">
+        <h3>Kinderwagen</h3>
+        <ul data-role="listview" data-inset="false">
+          <!--<h5>Dokumente</h5>-->
+          <li>
+            <label class="ui-checkbox"><input type="checkbox" name="checkbox-0" data-mini="false">Mutterpass</label>
+            <label class="ui-checkbox"><input type="checkbox" name="checkbox-0" data-mini="false">Krankenversicherungskarte</label>
+            <label class="ui-checkbox"><input type="checkbox" name="checkbox-0"
+                                              data-mini="false">Einweisungsschein</label>
+            <label class="ui-checkbox"><input type="checkbox" name="checkbox-0" data-mini="false">Ihr
+              Geburtsplan</label>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <div data-role="footer" data-id="foo1" data-position="fixed">
+    <div data-role="navbar" data-grid="d">
+      <ul>
+        <li><a href="#" id="diary">Tagebuch</a></li>
+        <li><a class="ui-btn-active ui-state-persist" href="#page-wishes" id="wishes">Wünsche</a></li>
+        <li><a href="#" id="products">Produkte</a></li>
+        <li><a href="#" id="aroundMe">Around Me</a></li>
+        <li><a href="#" id="overview">Übersicht</a></li>
+        <li><a href="#" id="education">Informationen</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
 
 </body>
 </html>
