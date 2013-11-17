@@ -48,3 +48,11 @@
   float: right;
   padding-top: 12px;
 }
+
+#list-diary .ui-listview .ui-li-thumb {
+  position: absolute;
+  left: 1px;
+  top: 0;
+  max-height: 128px;
+  max-width: 128px;
+}
