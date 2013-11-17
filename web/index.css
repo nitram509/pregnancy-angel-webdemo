@@ -8,3 +8,8 @@
 .img-product {
   width: 110px;
 }
+
+.container-float {
+  float: right;
+  padding-top: 12px;
+}
